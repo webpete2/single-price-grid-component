@@ -1,0 +1,178 @@
+body {
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: Karla;
+    font-size: 16px;
+
+    background-color: hsl(204, 43%, 93%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.mission-grid-item {
+    grid-column: span 2;
+
+    background-color: white;
+
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2.5rem;
+
+    width: 40rem;
+
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.join {
+    color: hsl(179, 62%, 43%);
+
+    font-size: 1.5rem;
+}
+
+.guarantee {
+    color: hsl(71, 73%, 54%);
+}
+
+.improve {
+    color: hsl(218, 22%, 67%);
+
+    font-size: 1.1rem;
+    font-weight: 450;
+}
+
+.subscription-grid-item {
+    background-color: hsl(179, 62%, 43%);
+
+    padding: 2.5rem;
+
+    border-bottom-left-radius: 8px;
+}
+
+
+.plan {
+    color: white;
+
+    margin-bottom: 0;
+}
+
+.price-per-month {
+    display: flex;
+    align-items: center;
+
+    margin-top: 0;
+}
+
+.price {
+    color: white;
+
+    font-size: 2rem;
+    font-weight: 650;
+
+    margin-right: 1rem;
+}
+
+.per-month {
+    color: hsl(204, 43%, 93%);
+
+    font-size: 1.1rem;
+}
+
+.access {
+    color: white;
+
+    margin-top: 0;
+}
+
+.sign-up {
+    border: 1px solid hsl(71, 73%, 54%);
+    border-radius: 8px;
+
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+
+    font-size: 1.05rem;
+
+    padding: 1.3rem;
+
+    width: 90%;
+
+    box-shadow: 0 7px 7px 7px rgba(0, 0, 0, 0.1);
+}
+
+.sign-up:hover {
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    letter-spacing: 3px;
+
+    background-color: hsla(71, 73%, 54%, 0.708);
+}
+
+.why-us-grid-item {
+    background-color: hsl(179, 47%, 52%);
+
+    padding: 2.5rem;
+
+    color: white;
+
+    border-bottom-right-radius: 8px;
+}
+
+.choose {
+    font-size: 1.3rem;
+}
+
+.why-us-grid-item ul {
+    list-style-type: none;
+
+    padding: 0;
+}
+
+.why-us-grid-item ul li {
+    margin-bottom: 0.5rem;
+
+    font-size: 0.9rem;
+
+    color: hsl(204, 43%, 93%);
+}
+
+@media only screen and (width <= 1000px) {
+    .grid-container {
+        display: flex;
+
+        flex-direction: column;
+
+        width: 25rem;
+    }
+
+    .mission-grid-item {
+        width: 22.5rem;
+    }
+
+    .improve {
+        line-height: 1.6rem;
+
+    }
+
+    .subscription-grid-item {
+        border-bottom-left-radius: 0;
+        
+        padding: 1.5rem;
+    }
+
+    .why-us-grid-item {
+        border-bottom-left-radius: 8px;
+
+        padding: 1.5rem;
+    }
+}
